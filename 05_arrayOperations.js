@@ -9,8 +9,11 @@
  *   - Vous ne pouvez pas utiliser de variable
  * 
   */
+const tableau1 = [1, 2, 4, 8, 25];
 
-const multiplyByTwo = (array) => {}
+const multiplyByTwo = tableau1.map((i) => i * 2)
+
+console.log(multiplyByTwo);
 
 
 /**
@@ -22,8 +25,10 @@ const multiplyByTwo = (array) => {}
  *   - les mots clées function et return sont interdits
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
+const tableau2 = ["alex", "arthur", "anais", "clemence", "igor"];
 
-const filterNameStartByA = (array) => {}
+
+const filterNameStartByA = tableau2.filter("a")
 
 /**
  * Utiliser la fonction .reduce sur le tableau passé en paramètre
@@ -35,7 +40,7 @@ const filterNameStartByA = (array) => {}
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const sum = (array) => {}
+const sum = (array) => { }
 
 /**
  * Utiliser la fonction .find sur le tableau passé en paramètre
@@ -56,7 +61,7 @@ const sum = (array) => {}
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const findUserById = (array, id) => {}
+const findUserById = (array, id) => { }
 
 
-module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
+module.exports = { multiplyByTwo, filterNameStartByA, sum, findUserById };

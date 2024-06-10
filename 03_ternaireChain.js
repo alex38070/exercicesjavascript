@@ -11,12 +11,12 @@
  */
 
 function ternaryChain(a, b) {
-    return a > b ?  "a est superieur a b" : 
-    a < b ? "a est inferieur a b":
-    "a egale b";
+    return a > b ?  ">" : 
+    a < b ? "<a est inferieur a b>":
+    "=";
 
 }
-console.log(ternaryChain(2,1))
+console.log(ternaryChain(2,2))
 
 
 
