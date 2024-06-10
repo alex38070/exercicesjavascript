@@ -8,7 +8,7 @@
  */
 
 let arrow1 = (arg) => {
-    return arg + 1;
+    return arg = arg + 1;
 }
 
 
@@ -21,6 +21,6 @@ let arrow1 = (arg) => {
  *   - le mot clée "return" est interdis
  */
 
-let arrow2 = (arg) => arg + 1;
+let arrow2 = (arg) => arg = arg + 1;
 
 module.exports = { arrow1, arrow2 };
