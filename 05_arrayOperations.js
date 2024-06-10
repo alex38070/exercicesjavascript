@@ -9,9 +9,9 @@
  *   - Vous ne pouvez pas utiliser de variable
  * 
   */
-const tableau1 = [1, 2, 4, 8, 25];
+const tableaux1 = [1, 2, 4, 8, 25];
 
-const multiplyByTwo = tableau1.map((i) => i * 2)
+const multiplyByTwo = tableaux1.map((tableau1) => tableau1 * 2)
 
 console.log(multiplyByTwo);
 
