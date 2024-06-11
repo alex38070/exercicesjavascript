@@ -9,11 +9,9 @@
  *   - Vous ne pouvez pas utiliser de variable
  * 
   */
-const tableaux1 = [1, 2, 4, 8, 25];
+const multiplyByTwo = (array) => array.map(item => item*2);
+console.log(multiplyByTwo([4,2,5,1]));
 
-const multiplyByTwo = tableaux1.map((tableau1) => tableau1 * 2)
-
-console.log(multiplyByTwo);
 
 
 /**
