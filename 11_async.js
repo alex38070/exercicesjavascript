@@ -12,7 +12,13 @@
  * 
  */
 const usingThen = (cb) => {
-}
+    /* const myPromise = sleep();
+     myPromise.then((resultat) => {
+         cb();
+     });*/
+     sleep().then(cb);
+ }
+ usingThen(() => console.log("callback1"))
 
 /**
  * Créez une fonction asynchrone qui attend 2 seconde puis execute le callback passé en paramètre
@@ -25,9 +31,12 @@ const usingThen = (cb) => {
  *   - ne pas utiliser .then
  */
 
-const usingAwait = (cb) => {
-
+const usingAwait = async (cb) => {
+    const res = await sleep();
+    cb();
+    return res;
 }
+usingAwait(() => console.log("callback2"))
 
 /**
  * Créez une fonction asynchrone qui effectue un appel api vers l'url passé en paramètre
@@ -45,7 +54,9 @@ const usingAwait = (cb) => {
 //const axios = require("axios");
 
 const apiResponse = async (url) => {
-
+    const res = await fetch(url);
+    console.log(res.json());
+    return res;
 }
 
 
